@@ -1,0 +1,7 @@
+services:
+  web:
+    image: ghcr.io/OWNER/REPO:static-site:latest
+    container_name: static-site
+    ports:
+      - "8080:80"
+    restart: unless-stopped
